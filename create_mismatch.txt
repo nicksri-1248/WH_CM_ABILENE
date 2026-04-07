@@ -1,0 +1,73 @@
+STEP 1
+
+**Before the attack begins:**
+Fake link s2↔s3 is already injected by a1 and a2 via forged LLDP packets. The controller now believes s2 and s3 are directly connected.
+
+So when h2 wants to reach h3, Dijkstra picks the fake link as the shortest path. Traffic is routed: **h2 → s3 → (fake link) → s2 → h3**.
+
+STEP 2
+
+**h2 sends a normal packet to h3.**
+src IP = 10.0.0.2   src MAC = 00:00:00:00:00:02
+dst IP = 10.0.0.3   dst MAC = 00:00:00:00:00:03
+
+Packet arrives at s3 (h2's switch). S3 has a flow entry installed by attacker that catches all new flows.
+
+STEP 3
+
+**S3 applies attacker-installed flow rule — Round 1:**
+dst IP → vIP (random fake IP e.g. 10.0.9.9)   dst MAC stays original.
+
+Now IP and MAC don't match any known host. The normal switch sends a Packet-In to controller.
+Controller checks Host Profile — no match found for vIP. **Controller broadcasts** to all edge switches.
+
+STEP 4
+
+**Broadcast reaches relay host (running a sniff script).**
+Relay identifies forged packet by the known vIP value.
+
+Relay extracts from this packet:
+sIP = 10.0.0.2   sMAC = 00:00:00:00:00:02   dMAC = 00:00:00:00:00:03
+
+**dIP**** is still unknown** — it was replaced by vIP. Need round 2.
+
+STEP 5
+
+**S3 applies next flow rule — Round 2:**
+Attacker installs high-priority flow in s3 matching the MAC just seen.
+This time: dst MAC → vMAC (random fake MAC)   dst IP restored to original 10.0.0.3.
+
+Again IP-MAC mismatch — controller broadcasts again. Relay captures this second broadcast and extracts:
+dIP = 10.0.0.3
+
+**Relay now has all 4 values: ****sIP****, ****sMAC****, ****dIP****, ****dMAC****.**
+
+**STEP 6**
+
+**Relay connects to s2's OVS listener port (unauthenticated TCP) and pushes a recovery flow entry:**
+
+match: ip_dst = 10.0.0.3
+actions: set ip_src=10.0.0.2, set ip_dst=10.0.0.3,
+         set eth_src=00:...:02, set eth_dst=00:...:03,
+         output: port_to_h3
+
+S2 now knows how to restore original addresses when it receives relay's disguised packet.
+
+STEP 7
+
+**Relay sends the actual data packet towards s2:**
+src IP = relay IP (10.0.0.12)   src MAC = relay MAC
+dst IP = 10.0.0.3 (h3's real IP)   dst MAC = h3's real MAC
+
+Controller routes this normally: relay(s1) → s1 → s2. No mismatch. No broadcast. Just normal traffic.
+
+STEP 8
+
+**S2 receives packet. Recovery flow entry fires:**
+Matches on dst IP = 10.0.0.3 ✓
+
+Set-Field actions rewrite all fields back:
+src IP → 10.0.0.2   src MAC → 00:00:00:00:00:02
+dst IP → 10.0.0.3   dst MAC → 00:00:00:00:00:03
+
+S2 forwards to h3. **H3 sees a perfectly normal packet from h2. Attack is invisible.**
