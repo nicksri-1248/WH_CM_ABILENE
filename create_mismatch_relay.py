@@ -29,14 +29,14 @@ SNIFF_TIMEOUT = 30    # seconds per broadcast sniff phase
 # No uplink_port needed — all phases use FLOOD, so relay is reachable at any hop.
 
 SWITCH_SIDES = {
-    "s1": {
+    "s4": {
         "hosts": {
             "ha": (4, "10.1.0.1"),   # abilene.py EXTRA_HOSTS → s1 port4
         },
     },
-    "s6": {
+    "s8": {
         "hosts": {
-            "hb": (4, "10.1.0.2"),   # abilene.py EXTRA_HOSTS → s6 port4
+            "hb": (5, "10.1.0.2"),   # abilene.py EXTRA_HOSTS → s6 port4
         },
     },
 }
