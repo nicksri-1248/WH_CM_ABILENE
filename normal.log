@@ -1,0 +1,1062 @@
+2026-04-14 21:08:38.14 INFO  [n.f.c.m.FloodlightModuleLoader] Loading modules from src/main/resources/floodlightdefault.properties
+2026-04-14 21:08:38.62 WARN  [n.f.r.RestApiServer] HTTPS disabled; HTTPS will not be used to connect to the REST API.
+2026-04-14 21:08:38.62 WARN  [n.f.r.RestApiServer] HTTP enabled; Allowing unsecure access to REST API on port 8080.
+2026-04-14 21:08:38.62 WARN  [n.f.r.RestApiServer] CORS access control allow ALL origins: true
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by io.netty.util.internal.PlatformDependent0 (file:/home/cn-lab-8/Desktop/floodlight-master/target/floodlight.jar) to field java.nio.Buffer.address
+WARNING: Please consider reporting this to the maintainers of io.netty.util.internal.PlatformDependent0
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2026-04-14 21:08:38.149 INFO  [i.n.u.i.PlatformDependent] Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
+2026-04-14 21:08:38.150 WARN  [n.f.c.i.OFSwitchManager] SSL disabled. Using unsecure connections between Floodlight and switches.
+2026-04-14 21:08:38.150 INFO  [n.f.c.i.OFSwitchManager] Clear switch flow tables on initial handshake as master: TRUE
+2026-04-14 21:08:38.150 INFO  [n.f.c.i.OFSwitchManager] Clear switch flow tables on each transition to master: TRUE
+2026-04-14 21:08:38.150 INFO  [n.f.c.i.OFSwitchManager] Setup default rules for all tables on switch connect: true
+2026-04-14 21:08:38.153 INFO  [n.f.c.i.OFSwitchManager] Setting 0x1 as the default max tables to receive table-miss flow
+2026-04-14 21:08:38.168 INFO  [n.f.c.i.OFSwitchManager] OpenFlow version OF_15 will be advertised to switches. Supported fallback versions [OF_10, OF_11, OF_12, OF_13, OF_14, OF_15]
+2026-04-14 21:08:38.169 INFO  [n.f.c.i.OFSwitchManager] Listening for OpenFlow switches on [0.0.0.0]:6653
+2026-04-14 21:08:38.169 INFO  [n.f.c.i.OFSwitchManager] OpenFlow socket config: 1 boss thread(s), 16 worker thread(s), 60000 ms TCP connection timeout, max 1000 connection backlog, 4194304 byte TCP send buffer size
+2026-04-14 21:08:38.170 INFO  [n.f.c.i.Controller] ControllerId set to 1
+2026-04-14 21:08:38.170 INFO  [n.f.c.i.Controller] Shutdown when controller transitions to STANDBY HA role: true
+2026-04-14 21:08:38.170 WARN  [n.f.c.i.Controller] Controller will automatically deserialize all Ethernet packet-in messages. Set 'deserializeEthPacketIns' to 'FALSE' if this feature is not required or when benchmarking core performance
+2026-04-14 21:08:38.170 INFO  [n.f.c.i.Controller] Controller role set to ACTIVE
+2026-04-14 21:08:38.190 INFO  [n.f.l.i.LinkDiscoveryManager] Link latency history set to 10 LLDP data points
+2026-04-14 21:08:38.191 INFO  [n.f.l.i.LinkDiscoveryManager] Latency update threshold set to +/-0.5 (50.0%) of rolling historical average
+2026-04-14 21:08:38.191 INFO  [n.f.t.TopologyManager] Path metrics set to LATENCY
+2026-04-14 21:08:38.191 INFO  [n.f.t.TopologyManager] Will compute a max of 3 paths upon topology updates
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default hard timeout not configured. Using 0.
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default idle timeout set to 5.
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default table ID not configured. Using 0x0.
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default priority not configured. Using 1.
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default flags will be set to SEND_FLOW_REM false.
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default flow matches set to: IN_PORT=true, VLAN=true, MAC=true, IP=true, FLAG=true, TPPT=true
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Default detailed flow matches set to: SRC_MAC=true, DST_MAC=true, SRC_IP=true, DST_IP=true, SRC_TPPT=true, DST_TPPT=true
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Not flooding ARP packets. ARP flows will be inserted for known destinations
+2026-04-14 21:08:38.196 INFO  [n.f.f.Forwarding] Flows will be removed on link/port down events
+2026-04-14 21:08:38.196 INFO  [n.f.s.StatisticsCollector] Statistics collection disabled
+2026-04-14 21:08:38.196 INFO  [n.f.s.StatisticsCollector] Port statistics collection interval set to 10s
+2026-04-14 21:08:38.197 INFO  [n.f.h.HAController] Configuration parameters: {serverPort=127.0.0.1:4242, nodeid=1} 1 
+2026-04-14 21:08:38.209 INFO  [o.s.s.i.SyncManager] [1] Updating sync configuration ClusterConfig [allNodes={1=Node [hostname=192.168.56.1, port=6642, nodeId=1, domainId=1], 2=Node [hostname=192.168.56.1, port=6643, nodeId=2, domainId=1], 3=Node [hostname=192.168.56.1, port=6644, nodeId=3, domainId=1], 4=Node [hostname=192.168.56.1, port=6645, nodeId=4, domainId=1]}, authScheme=CHALLENGE_RESPONSE, keyStorePath=/etc/floodlight/myKey.jceks, keyStorePassword is set]
+2026-04-14 21:08:38.261 INFO  [o.s.s.i.r.RPCService] Listening for internal floodlight RPC on 0.0.0.0/0.0.0.0:6642
+2026-04-14 21:08:38.274 INFO  [n.f.h.HAController] LDHAWorker is starting...
+2026-04-14 21:08:38.275 INFO  [n.f.h.HAController] TopoHAWorker is starting...
+2026-04-14 21:08:38.281 INFO  [n.f.h.AsyncElection] [AsyncElection] Priorities are not set.
+2026-04-14 21:08:38.281 INFO  [n.f.h.HAController] HAController is starting...
+2026-04-14 21:08:38.284 INFO  [n.f.h.HAServer] Starting HAServer...
+2026-04-14 21:08:38.301 INFO  [n.f.h.ControllerLogic] [ControllerLogic] Running...
+2026-04-14 21:08:38.316 INFO  [o.r.C.I.Server] Starting the Simple [HTTP/1.1] server on port 8080
+2026-04-14 21:08:38.316 INFO  [org.restlet] Starting net.floodlightcontroller.restserver.RestApiServer$RestApplication application
+2026-04-14 21:08:39.8 INFO  [n.f.j.JythonServer] Starting DebugServer on :6655
+2026-04-14 21:08:43.99 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35894
+2026-04-14 21:08:43.109 INFO  [n.f.c.i.OFChannelHandler] [[? from 127.0.0.1:35894]] Disconnected connection
+2026-04-14 21:08:43.179 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35912
+2026-04-14 21:08:43.179 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35896
+2026-04-14 21:08:43.180 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35920
+2026-04-14 21:08:43.181 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35926
+2026-04-14 21:08:43.181 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35934
+2026-04-14 21:08:43.182 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35946
+2026-04-14 21:08:43.182 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35950
+2026-04-14 21:08:43.183 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35976
+2026-04-14 21:08:43.183 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35986
+2026-04-14 21:08:43.183 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35960
+2026-04-14 21:08:43.184 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:35994
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35896 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35994 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35976 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35986 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35920 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35912 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35934 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35960 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35946 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35926 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.185 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:35950 with greatest version bitmap algorithm.
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:0b] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s11]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:02] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s2]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:0a] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s10]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:08] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s8]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:04] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s4]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:03] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s3]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:06] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s6]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:07] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s7]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:05] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s5]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:09] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s9]
+2026-04-14 21:08:43.219 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:01] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s1]
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.220 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:05 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:0a on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:07 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:08 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:01 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:06 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:03 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:0b on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:04 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:09 on upcoming transition to MASTER.
+2026-04-14 21:08:43.223 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:02 on upcoming transition to MASTER.
+2026-04-14 21:08:43.269 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:43.275 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:07(0x0) from 127.0.0.1:35976]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@50e7a1b2
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.276 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:07(0x0) from 127.0.0.1:35976]] Disconnected connection
+2026-04-14 21:08:43.276 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:07 outPort=1, dst=00:00:00:00:00:00:00:04, inPort=2, latency=0]
+2026-04-14 21:08:43.276 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:07 outPort=3, dst=00:00:00:00:00:00:00:08, inPort=1, latency=0]
+2026-04-14 21:08:43.276 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:08 outPort=1, dst=00:00:00:00:00:00:00:07, inPort=3, latency=0]
+2026-04-14 21:08:43.276 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=2, dst=00:00:00:00:00:00:00:07, inPort=1, latency=5]
+2026-04-14 21:08:43.276 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:07 outPort=2, dst=00:00:00:00:00:00:00:05, inPort=3, latency=0]
+2026-04-14 21:08:43.276 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=3, dst=00:00:00:00:00:00:00:07, inPort=2, latency=5]
+2026-04-14 21:08:43.277 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:07 removed from virtual gateway instance
+2026-04-14 21:08:43.277 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:07 removed from dhcp instance
+2026-04-14 21:08:43.305 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:08(0x0) from 127.0.0.1:35946]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@7b97e458
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.305 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:08(0x0) from 127.0.0.1:35946]] Disconnected connection
+2026-04-14 21:08:43.305 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:08 outPort=3, dst=00:00:00:00:00:00:00:0b, inPort=2, latency=0]
+2026-04-14 21:08:43.306 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0b outPort=2, dst=00:00:00:00:00:00:00:08, inPort=3, latency=0]
+2026-04-14 21:08:43.306 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:09 outPort=2, dst=00:00:00:00:00:00:00:08, inPort=2, latency=0]
+2026-04-14 21:08:43.306 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:08 outPort=2, dst=00:00:00:00:00:00:00:09, inPort=2, latency=0]
+2026-04-14 21:08:43.306 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:08 removed from virtual gateway instance
+2026-04-14 21:08:43.306 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:08 removed from dhcp instance
+2026-04-14 21:08:43.309 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:43 IST 2026, lastSeen=Tue Apr 14 21:08:43 IST 2026]]  newmap null 
+2026-04-14 21:08:43.321 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:02(0x0) from 127.0.0.1:35934]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@2bfb41c6
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.322 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:02(0x0) from 127.0.0.1:35934]] Disconnected connection
+2026-04-14 21:08:43.322 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:0b, inPort=1, latency=0]
+2026-04-14 21:08:43.322 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0b outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2, latency=0]
+2026-04-14 21:08:43.322 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=1, latency=2]
+2026-04-14 21:08:43.322 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=1, dst=00:00:00:00:00:00:00:02, inPort=1, latency=20]
+2026-04-14 21:08:43.322 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:02 removed from virtual gateway instance
+2026-04-14 21:08:43.322 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:02 removed from dhcp instance
+2026-04-14 21:08:43.365 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:0b(0x0) from 127.0.0.1:35950]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@2101de8e
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.365 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:0b(0x0) from 127.0.0.1:35950]] Disconnected connection
+2026-04-14 21:08:43.365 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0b outPort=3, dst=00:00:00:00:00:00:00:0a, inPort=3, latency=0]
+2026-04-14 21:08:43.365 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0a outPort=3, dst=00:00:00:00:00:00:00:0b, inPort=3, latency=0]
+2026-04-14 21:08:43.365 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:0b removed from virtual gateway instance
+2026-04-14 21:08:43.365 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:0b removed from dhcp instance
+2026-04-14 21:08:43.420 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:09(0x0) from 127.0.0.1:35960]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@5cb27321
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.421 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:09(0x0) from 127.0.0.1:35960]] Disconnected connection
+2026-04-14 21:08:43.421 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:09 outPort=3, dst=00:00:00:00:00:00:00:0a, inPort=2, latency=0]
+2026-04-14 21:08:43.421 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0a outPort=2, dst=00:00:00:00:00:00:00:09, inPort=3, latency=0]
+2026-04-14 21:08:43.421 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:09 outPort=1, dst=00:00:00:00:00:00:00:06, inPort=2, latency=0]
+2026-04-14 21:08:43.421 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=2, dst=00:00:00:00:00:00:00:09, inPort=1, latency=0]
+2026-04-14 21:08:43.421 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:09 removed from virtual gateway instance
+2026-04-14 21:08:43.421 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:09 removed from dhcp instance
+2026-04-14 21:08:43.470 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:04(0x0) from 127.0.0.1:35986]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@680adc45
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.470 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:05(0x0) from 127.0.0.1:35994]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@204d6f99
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.471 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:04(0x0) from 127.0.0.1:35986]] Disconnected connection
+2026-04-14 21:08:43.471 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=1, dst=00:00:00:00:00:00:00:04, inPort=1, latency=3]
+2026-04-14 21:08:43.471 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=1, dst=00:00:00:00:00:00:00:05, inPort=1, latency=2]
+2026-04-14 21:08:43.471 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:05(0x0) from 127.0.0.1:35994]] Disconnected connection
+2026-04-14 21:08:43.471 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:04 removed from virtual gateway instance
+2026-04-14 21:08:43.471 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:04 removed from dhcp instance
+2026-04-14 21:08:43.472 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:06 outPort=1, dst=00:00:00:00:00:00:00:05, inPort=2, latency=0]
+2026-04-14 21:08:43.472 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=2, dst=00:00:00:00:00:00:00:06, inPort=1, latency=0]
+2026-04-14 21:08:43.472 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:05 removed from virtual gateway instance
+2026-04-14 21:08:43.472 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:05 removed from dhcp instance
+2026-04-14 21:08:43.598 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:35920]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@e35d669
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.598 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:0a(0x0) from 127.0.0.1:35926]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@7359e50e
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.599 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:35920]] Disconnected connection
+2026-04-14 21:08:43.599 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:0a, inPort=1, latency=0]
+2026-04-14 21:08:43.599 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0a outPort=1, dst=00:00:00:00:00:00:00:03, inPort=2, latency=0]
+2026-04-14 21:08:43.599 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2, latency=0]
+2026-04-14 21:08:43.600 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1, latency=0]
+2026-04-14 21:08:43.600 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:0a(0x0) from 127.0.0.1:35926]] Disconnected connection
+2026-04-14 21:08:43.600 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:03 removed from virtual gateway instance
+2026-04-14 21:08:43.600 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:03 removed from dhcp instance
+2026-04-14 21:08:43.601 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:0a removed from virtual gateway instance
+2026-04-14 21:08:43.601 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:0a removed from dhcp instance
+2026-04-14 21:08:43.727 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:01(0x0) from 127.0.0.1:35912]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@40c91abf
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.728 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:01(0x0) from 127.0.0.1:35912]] Disconnected connection
+2026-04-14 21:08:43.728 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:01 removed from virtual gateway instance
+2026-04-14 21:08:43.729 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:01 removed from dhcp instance
+2026-04-14 21:08:43.811 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:43.811 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=3, activeSince=Tue Apr 14 21:08:43 IST 2026, lastSeen=Tue Apr 14 21:08:43 IST 2026]]  newmap null 
+2026-04-14 21:08:43.925 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:06(0x0) from 127.0.0.1:35896]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@372b7884
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:43.926 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:06(0x0) from 127.0.0.1:35896]] Disconnected connection
+2026-04-14 21:08:43.926 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:06 removed from virtual gateway instance
+2026-04-14 21:08:43.927 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:06 removed from dhcp instance
+2026-04-14 21:08:44.299 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36006
+2026-04-14 21:08:44.300 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36006 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.305 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [? from 127.0.0.1:36006]state net.floodlightcontroller.core.internal.OFChannelHandler$WaitFeaturesReplyState@75a7785c
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.305 INFO  [n.f.c.i.OFChannelHandler] [[? from 127.0.0.1:36006]] Disconnected connection
+2026-04-14 21:08:44.306 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36008
+2026-04-14 21:08:44.306 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36008 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.313 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:44.313 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:43 IST 2026, lastSeen=Tue Apr 14 21:08:43 IST 2026]]  newmap null 
+2026-04-14 21:08:44.326 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36018
+2026-04-14 21:08:44.327 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36018 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.327 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:08] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s8]
+2026-04-14 21:08:44.327 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.327 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:08 on upcoming transition to MASTER.
+2026-04-14 21:08:44.329 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:02] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s2]
+2026-04-14 21:08:44.329 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.329 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:02 on upcoming transition to MASTER.
+2026-04-14 21:08:44.369 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36034
+2026-04-14 21:08:44.370 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36034 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.373 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:0b] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s11]
+2026-04-14 21:08:44.373 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:0b on upcoming transition to MASTER.
+2026-04-14 21:08:44.425 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36050
+2026-04-14 21:08:44.425 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36050 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.428 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:09] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s9]
+2026-04-14 21:08:44.428 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:09 on upcoming transition to MASTER.
+2026-04-14 21:08:44.429 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:08(0x0) from 127.0.0.1:36008]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@6dcbc3dd
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.430 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:08(0x0) from 127.0.0.1:36008]] Disconnected connection
+2026-04-14 21:08:44.430 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:08 outPort=3, dst=00:00:00:00:00:00:00:0b, inPort=2, latency=0]
+2026-04-14 21:08:44.430 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0b outPort=2, dst=00:00:00:00:00:00:00:08, inPort=3, latency=0]
+2026-04-14 21:08:44.430 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:08 removed from virtual gateway instance
+2026-04-14 21:08:44.430 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:08 removed from dhcp instance
+2026-04-14 21:08:44.480 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36070
+2026-04-14 21:08:44.480 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36054
+2026-04-14 21:08:44.480 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36070 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.480 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36054 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.485 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:04] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s4]
+2026-04-14 21:08:44.485 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.485 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:05] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s5]
+2026-04-14 21:08:44.486 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.486 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:04 on upcoming transition to MASTER.
+2026-04-14 21:08:44.486 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:05 on upcoming transition to MASTER.
+2026-04-14 21:08:44.507 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:02(0x0) from 127.0.0.1:36018]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@fe700cf
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.507 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:02(0x0) from 127.0.0.1:36018]] Disconnected connection
+2026-04-14 21:08:44.507 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:02 outPort=2, dst=00:00:00:00:00:00:00:0b, inPort=1, latency=1]
+2026-04-14 21:08:44.507 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:0b outPort=1, dst=00:00:00:00:00:00:00:02, inPort=2, latency=1]
+2026-04-14 21:08:44.507 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:02 removed from virtual gateway instance
+2026-04-14 21:08:44.507 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:02 removed from dhcp instance
+2026-04-14 21:08:44.561 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:04(0x0) from 127.0.0.1:36054]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@76dfca75
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.561 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:04(0x0) from 127.0.0.1:36054]] Disconnected connection
+2026-04-14 21:08:44.561 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:05 outPort=1, dst=00:00:00:00:00:00:00:04, inPort=1, latency=5]
+2026-04-14 21:08:44.561 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:04 outPort=1, dst=00:00:00:00:00:00:00:05, inPort=1, latency=6]
+2026-04-14 21:08:44.561 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:04 removed from virtual gateway instance
+2026-04-14 21:08:44.561 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:04 removed from dhcp instance
+2026-04-14 21:08:44.618 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36072
+2026-04-14 21:08:44.618 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36086
+2026-04-14 21:08:44.619 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36086 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.619 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36072 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.626 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:0a(0x0) from 127.0.0.1:36086]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@1c388a82
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.627 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:0a(0x0) from 127.0.0.1:36086]] Disconnected connection
+2026-04-14 21:08:44.628 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:03] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s3]
+2026-04-14 21:08:44.628 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.628 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:09(0x0) from 127.0.0.1:36050]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@424babd1
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.629 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:03 on upcoming transition to MASTER.
+2026-04-14 21:08:44.629 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:09(0x0) from 127.0.0.1:36050]] Disconnected connection
+2026-04-14 21:08:44.629 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:09 removed from virtual gateway instance
+2026-04-14 21:08:44.629 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:09 removed from dhcp instance
+2026-04-14 21:08:44.729 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36096
+2026-04-14 21:08:44.730 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36096 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.749 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:01] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s1]
+2026-04-14 21:08:44.749 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.749 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:01 on upcoming transition to MASTER.
+2026-04-14 21:08:44.751 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:01(0x0) from 127.0.0.1:36096]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@75070f01
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.752 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:01(0x0) from 127.0.0.1:36096]] Disconnected connection
+2026-04-14 21:08:44.752 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:01 removed from virtual gateway instance
+2026-04-14 21:08:44.752 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:01 removed from dhcp instance
+2026-04-14 21:08:44.814 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:44.814 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:44 IST 2026, lastSeen=Tue Apr 14 21:08:44 IST 2026]]  newmap null 
+2026-04-14 21:08:44.815 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:36072]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@2a0b1308
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.816 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:36072]] Disconnected connection
+2026-04-14 21:08:44.816 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:03 removed from virtual gateway instance
+2026-04-14 21:08:44.816 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:03 removed from dhcp instance
+2026-04-14 21:08:44.816 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:05(0x0) from 127.0.0.1:36070]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@3117992e
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.816 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:05 removed from virtual gateway instance
+2026-04-14 21:08:44.816 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:05(0x0) from 127.0.0.1:36070]] Disconnected connection
+2026-04-14 21:08:44.816 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:05 removed from dhcp instance
+2026-04-14 21:08:44.878 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:0b(0x0) from 127.0.0.1:36034]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@625baa59
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:44.879 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:0b(0x0) from 127.0.0.1:36034]] Disconnected connection
+2026-04-14 21:08:44.879 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:0b removed from virtual gateway instance
+2026-04-14 21:08:44.879 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:0b removed from dhcp instance
+2026-04-14 21:08:44.938 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36102
+2026-04-14 21:08:44.939 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36102 with greatest version bitmap algorithm.
+2026-04-14 21:08:44.946 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:06] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s6]
+2026-04-14 21:08:44.947 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:44.947 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:06 on upcoming transition to MASTER.
+2026-04-14 21:08:45.68 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:06(0x0) from 127.0.0.1:36102]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@3011483d
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:45.68 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:06(0x0) from 127.0.0.1:36102]] Disconnected connection
+2026-04-14 21:08:45.69 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:06 removed from virtual gateway instance
+2026-04-14 21:08:45.69 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:06 removed from dhcp instance
+2026-04-14 21:08:45.316 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:45.316 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:45.317 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=4, activeSince=Tue Apr 14 21:08:44 IST 2026, lastSeen=Tue Apr 14 21:08:44 IST 2026]]  newmap null 
+2026-04-14 21:08:45.318 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Tue Apr 14 21:08:44 IST 2026, lastSeen=Tue Apr 14 21:08:44 IST 2026]]  newmap null 
+2026-04-14 21:08:45.318 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=1, activeSince=Tue Apr 14 21:08:44 IST 2026, lastSeen=Tue Apr 14 21:08:44 IST 2026]]  newmap null 
+2026-04-14 21:08:45.319 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=2, activeSince=Tue Apr 14 21:08:44 IST 2026, lastSeen=Tue Apr 14 21:08:44 IST 2026]]  newmap null 
+2026-04-14 21:08:45.320 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=3, activeSince=Tue Apr 14 21:08:44 IST 2026, lastSeen=Tue Apr 14 21:08:44 IST 2026]]  newmap null 
+2026-04-14 21:08:45.322 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36116
+2026-04-14 21:08:45.323 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36116 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.329 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:07] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s7]
+2026-04-14 21:08:45.329 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.330 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:07 on upcoming transition to MASTER.
+2026-04-14 21:08:45.453 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36130
+2026-04-14 21:08:45.454 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36130 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.456 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:08] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s8]
+2026-04-14 21:08:45.456 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.457 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:08 on upcoming transition to MASTER.
+2026-04-14 21:08:45.513 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36132
+2026-04-14 21:08:45.514 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36132 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.519 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:02] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s2]
+2026-04-14 21:08:45.519 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.519 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:02 on upcoming transition to MASTER.
+2026-04-14 21:08:45.581 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:08(0x0) from 127.0.0.1:36130]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@28b6949e
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:45.581 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36136
+2026-04-14 21:08:45.582 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36136 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.582 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:08(0x0) from 127.0.0.1:36130]] Disconnected connection
+2026-04-14 21:08:45.582 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:08 outPort=1, dst=00:00:00:00:00:00:00:07, inPort=3, latency=3]
+2026-04-14 21:08:45.582 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:07 outPort=3, dst=00:00:00:00:00:00:00:08, inPort=1, latency=3]
+2026-04-14 21:08:45.582 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:08 removed from virtual gateway instance
+2026-04-14 21:08:45.582 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:08 removed from dhcp instance
+2026-04-14 21:08:45.584 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:04] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s4]
+2026-04-14 21:08:45.585 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.585 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:04 on upcoming transition to MASTER.
+2026-04-14 21:08:45.646 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36156
+2026-04-14 21:08:45.646 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36140
+2026-04-14 21:08:45.646 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36156 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.646 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36140 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.658 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:09] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s9]
+2026-04-14 21:08:45.659 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:0a] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s10]
+2026-04-14 21:08:45.659 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:09 on upcoming transition to MASTER.
+2026-04-14 21:08:45.660 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:0a on upcoming transition to MASTER.
+2026-04-14 21:08:45.770 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36168
+2026-04-14 21:08:45.771 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36168 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.774 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:01] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s1]
+2026-04-14 21:08:45.774 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.775 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:01 on upcoming transition to MASTER.
+2026-04-14 21:08:45.820 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:45.822 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36170
+2026-04-14 21:08:45.822 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36174
+2026-04-14 21:08:45.823 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36170 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.823 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:45.823 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36174 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.824 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:08, port=2, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap {00:00:00:00:00:00:00:04=AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]} 
+2026-04-14 21:08:45.825 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:08, port=5, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap {00:00:00:00:00:00:00:04=AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]} 
+2026-04-14 21:08:45.826 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:08, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:45.827 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:08, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap {00:00:00:00:00:00:00:04=AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]} 
+2026-04-14 21:08:45.827 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:45.827 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=5, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=2, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap {00:00:00:00:00:00:00:04=AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=5, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]} 
+2026-04-14 21:08:45.828 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=4, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=2, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap {00:00:00:00:00:00:00:04=AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=4, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]} 
+2026-04-14 21:08:45.829 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:05] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s5]
+2026-04-14 21:08:45.829 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:03] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s3]
+2026-04-14 21:08:45.829 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.829 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:45.830 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:05 on upcoming transition to MASTER.
+2026-04-14 21:08:45.830 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:03 on upcoming transition to MASTER.
+2026-04-14 21:08:45.837 ERROR [n.f.c.i.OFChannelHandler] Error while processing message from switch [00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:36170]state net.floodlightcontroller.core.internal.OFChannelHandler$CompleteState@7d199143
+io.netty.handler.codec.DecoderException: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:358) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:230) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:308) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:294) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:846) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:112) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:137) ~[floodlight.jar:1.2-SNAPSHOT]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: org.projectfloodlight.openflow.exceptions.OFParseError: Unknown value for discriminator typeLen of class OFOxmVer15: 82436
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:546) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFOxmVer15$Reader.readFrom(OFOxmVer15.java:38) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.util.ChannelUtils.readList(ChannelUtils.java:66) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.OFOxmList.readFrom(OFOxmList.java:102) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMatchV3Ver15$Reader.readFrom(OFMatchV3Ver15.java:596) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.ChannelUtilsVer15.readOFMatch(ChannelUtilsVer15.java:16) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFPacketInVer15$Reader.readFrom(OFPacketInVer15.java:544) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:99) ~[floodlight.jar:1.2-SNAPSHOT]
+	at org.projectfloodlight.openflow.protocol.ver15.OFMessageVer15$Reader.readFrom(OFMessageVer15.java:39) ~[floodlight.jar:1.2-SNAPSHOT]
+	at net.floodlightcontroller.core.internal.OFMessageDecoder.decode(OFMessageDecoder.java:80) ~[floodlight.jar:1.2-SNAPSHOT]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:327) ~[floodlight.jar:1.2-SNAPSHOT]
+	... 12 common frames omitted
+2026-04-14 21:08:45.838 INFO  [n.f.c.i.OFChannelHandler] [[00:00:00:00:00:00:00:03(0x0) from 127.0.0.1:36170]] Disconnected connection
+2026-04-14 21:08:45.838 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=2, dst=00:00:00:00:00:00:00:0a, inPort=1, latency=1]
+2026-04-14 21:08:45.838 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:03 outPort=1, dst=00:00:00:00:00:00:00:01, inPort=2, latency=2]
+2026-04-14 21:08:45.838 INFO  [n.f.l.i.LinkDiscoveryManager] Inter-switch link removed: Link [src=00:00:00:00:00:00:00:01 outPort=2, dst=00:00:00:00:00:00:00:03, inPort=1, latency=2]
+2026-04-14 21:08:45.838 INFO  [n.f.f.Forwarding] Handle switchRemoved. Switch 00:00:00:00:00:00:00:03 removed from virtual gateway instance
+2026-04-14 21:08:45.838 INFO  [n.f.d.DHCPServer] Handle switchRemoved. Switch 00:00:00:00:00:00:00:03 removed from dhcp instance
+2026-04-14 21:08:45.883 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36178
+2026-04-14 21:08:45.884 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36178 with greatest version bitmap algorithm.
+2026-04-14 21:08:45.887 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:0b] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s11]
+2026-04-14 21:08:45.888 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:0b on upcoming transition to MASTER.
+2026-04-14 21:08:46.71 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36190
+2026-04-14 21:08:46.71 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36190 with greatest version bitmap algorithm.
+2026-04-14 21:08:46.76 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:06] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s6]
+2026-04-14 21:08:46.76 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:46.77 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:06 on upcoming transition to MASTER.
+2026-04-14 21:08:46.329 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:46.334 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=2, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap {00:00:00:00:00:00:00:01=AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]} 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=2, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=1, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:02, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap {00:00:00:00:00:00:00:01=AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]} 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap {00:00:00:00:00:00:00:01=AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]} 
+2026-04-14 21:08:46.335 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:04, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:05, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:06, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.585 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36196
+2026-04-14 21:08:46.585 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36196 with greatest version bitmap algorithm.
+2026-04-14 21:08:46.590 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:08] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s8]
+2026-04-14 21:08:46.590 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:46.591 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:08 on upcoming transition to MASTER.
+2026-04-14 21:08:46.835 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:46.838 INFO  [n.f.c.i.OFChannelHandler] New switch connection from /127.0.0.1:36204
+2026-04-14 21:08:46.838 INFO  [n.f.c.i.OFChannelHandler] Negotiated OpenFlow version of OF_15 for /127.0.0.1:36204 with greatest version bitmap algorithm.
+2026-04-14 21:08:46.838 WARN  [n.f.c.i.OFChannelHandler] Ignoring PACKET_IN message from /127.0.0.1:36204 during OpenFlow channel establishment.
+2026-04-14 21:08:46.839 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Switch OFSwitch DPID[00:00:00:00:00:00:00:03] bound to class class net.floodlightcontroller.core.internal.OFSwitch, description SwitchDescription [manufacturerDescription=Nicira, Inc., hardwareDescription=Open vSwitch, softwareDescription=3.3.4, serialNumber=None, datapathDescription=s3]
+2026-04-14 21:08:46.839 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Defining switch role from config file: ROLE_MASTER
+2026-04-14 21:08:46.840 INFO  [n.f.c.i.OFSwitchHandshakeHandler] Clearing flow tables of 00:00:00:00:00:00:00:03 on upcoming transition to MASTER.
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:08, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:07, port=3, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:09, port=2, activeSince=Tue Apr 14 21:08:45 IST 2026, lastSeen=Tue Apr 14 21:08:45 IST 2026]]  newmap null 
+2026-04-14 21:08:46.846 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0b, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:08, port=3, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:46 IST 2026]]  newmap null 
+2026-04-14 21:08:47.347 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.360 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:01, port=2, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=2, activeSince=Tue Apr 14 21:08:47 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:47.361 INFO  [n.f.d.i.Device] updateAttachmentPoint: ap [AttachmentPoint [sw=00:00:00:00:00:00:00:0a, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026], AttachmentPoint [sw=00:00:00:00:00:00:00:03, port=1, activeSince=Tue Apr 14 21:08:46 IST 2026, lastSeen=Tue Apr 14 21:08:47 IST 2026]]  newmap null 
+2026-04-14 21:08:53.269 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:09:08.272 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:09:23.276 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:09:38.279 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:09:38.331 INFO  [n.f.h.ControllerLogic] [ControllerLogic] Election timed out, setting Controller 1 as LEADER!
+2026-04-14 21:09:38.332 INFO  [n.f.h.ControllerLogic] [ControllerLogic] Getting Leader: 1
+2026-04-14 21:09:53.282 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:10:08.284 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:10:23.287 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:10:23.383 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:10:38.290 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:10:38.409 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:10:53.293 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:10:53.440 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
+2026-04-14 21:11:08.295 INFO  [n.f.l.i.LinkDiscoveryManager] Sending LLDP packets out of all the enabled ports
+2026-04-14 21:11:08.462 INFO  [n.f.t.TopologyManager] Recomputing topology due to: link-discovery-updates
