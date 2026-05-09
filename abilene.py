@@ -58,7 +58,7 @@ EXTRA_HOSTS = [
 # Extra base delay added to every inter-switch link (ms).
 # Increase this to push all links toward a target latency.
 # Example: BASE_DELAY_MS = 20 gives ~23–30 ms for Abilene links.
-BASE_DELAY_MS = 4
+BASE_DELAY_MS = 1
 
 
 def _delay_ms(src: int, dst: int) -> str:
