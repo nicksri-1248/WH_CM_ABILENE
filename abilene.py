@@ -47,20 +47,28 @@ LINKS = [
 #       (3, 'hb', '00:00:00:00:ff:02', '10.1.0.2/16'),  # Seattle  s4
 #   ]
 EXTRA_HOSTS = [
-    (3, 'ha', '00:00:00:00:ff:02', '10.1.0.1/16'),  
-    (7, 'hb', '00:00:00:00:ff:03', '10.1.0.2/16'),  
-    (6, 'relay', '00:00:00:00:00:0c', '10.1.0.3/16'),
+    (0, 'ha', '00:00:00:00:ff:02', '10.1.0.1/16'),  
+    (8, 'hb', '00:00:00:00:ff:03', '10.1.0.2/16'),
+    (0, 'a1', '00:00:00:00:ff:0a', '10.1.0.4/16'),
+    (8, 'a2', '00:00:00:00:ff:0b', '10.1.0.5/16'), 
+    (10, 'relay', '00:00:00:00:00:0c', '10.1.0.3/16'),
 ]
 
 
+# Extra base delay added to every inter-switch link (ms).
+# Increase this to push all links toward a target latency.
+# Example: BASE_DELAY_MS = 20 gives ~23–30 ms for Abilene links.
+BASE_DELAY_MS = 4
+
+
 def _delay_ms(src: int, dst: int) -> str:
-    """One-way fiber propagation delay from JSON dist field."""
+    """One-way delay = fiber propagation + BASE_DELAY_MS."""
     for lnk in LINKS:
         if (lnk['src'] == src and lnk['dst'] == dst) or \
            (lnk['src'] == dst and lnk['dst'] == src):
-            ms = lnk['dist_km'] / 200_000 * 1000   # fiber ~200,000 km/s
+            ms = lnk['dist_km'] / 200_000 * 1000 + BASE_DELAY_MS
             return f'{ms:.2f}ms'
-    return '1ms'
+    return f'{BASE_DELAY_MS}ms'
 
 
 # ── Topology ──────────────────────────────────────────────────────────────────
@@ -149,8 +157,8 @@ def run():
     print('\n[*] Waiting for switches to connect to controller...')
     net.waitConnected()
 
-    print('[*] Waiting for LLDP link discovery (10s)...')
-    time.sleep(10)
+    print('[*] Waiting for LLDP link discovery (30s)...')
+    time.sleep(30)
 
     print('\n[*] Inter-switch link delays:')
     for lnk in LINKS:
